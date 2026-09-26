@@ -1,0 +1,13 @@
+# Motor Speed Calculator
+
+print("=== Motor Speed Calculator ===")
+
+frequency = float(input("Enter frequency (Hz): "))
+poles = int(input("Enter number of poles: "))
+
+if frequency > 0 and poles > 0:
+    speed = (120 * frequency) / poles
+
+    print("\nMotor Speed =", speed, "RPM")
+else:
+    print("Please enter positive values.")
